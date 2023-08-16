@@ -11,6 +11,18 @@
   border-radius: 10px;
 }
 
+.bookmark-img,
+.bookmark-img--selected {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+}
+
+.bookmark-img:hover,
+.bookmark-img--selected:hover {
+  transform: scale(1.2);
+}
+
 .card-question {
   padding: 20px;
   text-align: center;
@@ -28,16 +40,12 @@
   font-weight: var(--bold);
 }
 
-.bookmark-img,
-.bookmark-img--selected {
-  position: absolute;
-  top: -20px;
-  right: -20px;
-}
-
-.bookmark-img:hover,
-.bookmark-img--selected:hover {
-  transform: scale(1.2);
+code {
+  background-color: #eee;
+  border-radius: 3px;
+  font-family: courier, monospace;
+  padding: 1px 3px;
+  font-family: monospace;
 }
 
 .main-tag {
@@ -64,10 +72,17 @@
   background-color: #f6db60;
 }
 
-code {
-  background-color: #eee;
-  border-radius: 3px;
-  font-family: courier, monospace;
-  padding: 1px 3px;
-  font-family: monospace;
+/* Profile page */
+
+.main-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-name {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
